@@ -87,9 +87,9 @@ src/
 ## Integrantes
 
 
-| Guilherme Zanfolim Nunes Farias | RM 570983 | [LinkedIn](www.linkedin.com/in/guilherme-zanfolim-202865315) | [GitHub](https://github.com/zanfolim07) |
+| Guilherme Zanfolim Nunes Farias | RM 570983 | [LinkedIn](https://www.linkedin.com/in/guilherme-zanfolim-202865315?utm_source=share_via&utm_content=profile&utm_medium=member_ios) | [GitHub](https://github.com/zanfolim07) |
 
-| Lucas Monteiro Dias da Costa | RM 571388 | [LinkedIn](https://linkedin.com) | [GitHub](https://github.com) |
+| Lucas Monteiro Dias da Costa | RM 571388 | [LinkedIn](https://www.linkedin.com/in/lucas-monteiro-1110703b5/) | [GitHub](https://github.com/monteiroo5) |
 
 | Jaime Ringel | RM 562044 | [LinkedIn](https://www.linkedin.com/in/jaime-ringel-1060bb402?utm_source=share_via&utm_content=profile&utm_medium=member_android) | [GitHub](https://github.com/jaimeringel004) |
 
