@@ -91,9 +91,9 @@ src/
 
 | Lucas Monteiro Dias da Costa | RM 571388 | [LinkedIn](https://linkedin.com) | [GitHub](https://github.com) |
 
-| Jaime Ringel | RM 562044 | [LinkedIn](https://linkedin.com) | [GitHub](https://github.com) |
+| Jaime Ringel | RM 562044 | [LinkedIn](https://www.linkedin.com/in/jaime-ringel-1060bb402?utm_source=share_via&utm_content=profile&utm_medium=member_android) | [GitHub](https://github.com/jaimeringel004) |
 
-| Fabio Cezare Almeida | RM 572642 | [LinkedIn](https://linkedin.com) | [GitHub](https://github.com) |
+| Fabio Cezare Almeida | RM 572642 | [LinkedIn](https://www.linkedin.com/in/fabio-cezare-almeida-4b448a408?utm_source=share_via&utm_content=profile&utm_medium=member_ios) | [GitHub](https://github.com/FabioCAlmeida) |
 
 | Matheus Magalhaes Romao de Moraes | RM 573371 | [LinkedIn](https://linkedin.com) | [GitHub](https://github.com) |
 
