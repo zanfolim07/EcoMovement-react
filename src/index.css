@@ -1,18 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #0f766e;
+  --color-brand: #1885DB;
+  --color-brand-dark: #1372CE;
+  --color-ink: #0f172a;
+  --color-copy: #424242;
+  --color-muted: #475569;
+  --color-line: #dbe7ef;
+  --font-sans: "Poppins", "Segoe UI", Arial, sans-serif;
 }
 
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
+  --text: #424242;
+  --text-h: #0f172a;
   --bg: #fff;
-  --border: #e5e4e7;
+  --border: #dbe7ef;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: "Poppins", "Segoe UI", Arial, sans-serif;
+  --heading: "Poppins", "Segoe UI", Arial, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+
+  --cor-texto-principal: #424242;
+  --cor-texto-detalhes: #424242;
+
+  --cor-azul: #1885DB;
+  --cor-branco: #ffffff;
+  --cor-titulo: #0f172a;
+  --cor-texto-secundario: #475569;
+  --cor-borda: #dbe7ef;
+  --cor-borda-campo: #cbd5e1;
+  --cor-placeholder: #94a3b8;
+  --cor-erro: #dc2626;
+  --cor-sucesso: #15803d;
+  --cor-azul-escuro: #1372ce;
+  --cor-superficie: #f8fbfd;
+  --raio-retangulo: 16px;
+
+  --tamanho-titulo: 2rem;
+  --tamanho-subtitulo: 1.25rem;
+  --tamanho-secao: 1.5rem;
+  --tamanho-corpo: 0.875rem;
+  --tamanho-apoio: 0.75rem;
+  --linha-titulo: 1.2;
+  --linha-corpo: 1.6;
+  --peso-corpo: 400;
+  --peso-titulo: 700;
+
+  --gradiente-principal: linear-gradient(
+    90deg,
+    #80D7DE 0%,
+    #4CAEDD 13%,
+    #1885DB 25%,
+    #1B89DB 50%,
+    #1372CE 100%
+  );
 
   font-family: var(--sans);
   color: var(--text);
@@ -31,14 +73,23 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
 body {
   margin: 0;
-  min-width: 320px;
+  padding: 0;
+  width: 100%;
   min-height: 100vh;
+}
+
+body {
+  min-width: 320px;
   background: var(--bg);
+  font-family: var(--sans);
+  color: var(--cor-texto-principal);
 }
 
 #root {
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -50,6 +101,13 @@ h5,
 h6 {
   font-family: var(--heading);
   color: var(--text-h);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
 }
 
 button,
@@ -65,4 +123,16 @@ a:focus-visible {
 
 code {
   font-family: var(--mono);
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
