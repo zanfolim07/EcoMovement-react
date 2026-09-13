@@ -1,108 +1,38 @@
-import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 import Button from '../../components/Button/Button';
-
 import imagemInicio from '../../assets/img/imagem-inicio.png';
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
-    <main>
-      <section className="bg-brand px-6 py-16 text-white md:py-24">
-        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
-          <div>
-            <span className="text-sm font-semibold uppercase tracking-widest text-white/80">
-              EcoMovement
-            </span>
+    <section className="relative flex min-h-screen w-full items-center overflow-hidden bg-[linear-gradient(90deg,#80D7DE_0%,#4CAEDD_13%,#1885DB_25%,#1B89DB_50%,#1372CE_100%)] px-6 py-16 md:px-12 md:py-0">
+      <div className="mx-auto flex w-full max-w-320 flex-col-reverse items-center gap-10 md:flex-row md:justify-between md:gap-8">
+        <div className="z-2 max-w-152 text-center text-white md:text-left">
+          <h1 className="m-0 text-3xl font-extrabold leading-tight">EcoMovement</h1>
 
-            <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-              Menos carbono e mais movimento.
-            </h1>
+          <p className="mt-6 text-xl font-light leading-tight md:mt-8">
+            Pequenas <strong>ações</strong> geram grandes <strong>impactos</strong>
+          </p>
 
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg md:text-xl">
-              Transforme pequenas atitudes sustentáveis em grandes mudanças.
-              Participe de missões, acumule EcoPoints e faça parte desse
-              movimento.
-            </p>
+          <p className="mt-5 text-sm leading-relaxed">
+            Acumule pontos no dia a dia. Transforme seu estilo de vida e suas ações em impacto
+            real. Veja sua árvore crescer junto com o mundo que você melhora.
+          </p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Link to="/missoes">
-                <Button className="w-full sm:w-auto">
-                  Conheça as missões
-                </Button>
-              </Link>
-
-              <Link
-                to="/sobre"
-                className="inline-flex w-full items-center justify-center rounded-2xl border-2 border-white px-8 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white/10 sm:w-auto md:text-base"
-              >
-                Saiba mais
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex justify-center">
-            <img
-              src={imagemInicio}
-              alt="Ilustração do EcoMovement"
-              className="w-full max-w-md object-contain md:max-w-lg"
-            />
+          <div className="mt-8 flex justify-center md:justify-start">
+            <Button onClick={() => navigate('/inicio')}>Entrar</Button>
           </div>
         </div>
-      </section>
 
-      <section className="px-6 py-16 md:py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="text-center">
-            <span className="text-sm font-semibold uppercase tracking-widest text-brand">
-              Como funciona
-            </span>
-
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              Pequenas ações, grandes mudanças
-            </h2>
-
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
-              O EcoMovement incentiva hábitos sustentáveis através de
-              desafios e participação da comunidade.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            <article className="rounded-2xl border border-gray-200 p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md">
-              <h3 className="text-xl font-bold">
-                Participe
-              </h3>
-
-              <p className="mt-3 leading-relaxed text-gray-600">
-                Escolha missões sustentáveis e coloque boas atitudes em
-                prática no seu dia a dia.
-              </p>
-            </article>
-
-            <article className="rounded-2xl border border-gray-200 p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md">
-              <h3 className="text-xl font-bold">
-                Acumule EcoPoints
-              </h3>
-
-              <p className="mt-3 leading-relaxed text-gray-600">
-                Registre suas ações e acompanhe sua evolução através dos
-                pontos conquistados.
-              </p>
-            </article>
-
-            <article className="rounded-2xl border border-gray-200 p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md">
-              <h3 className="text-xl font-bold">
-                Faça a diferença
-              </h3>
-
-              <p className="mt-3 leading-relaxed text-gray-600">
-                Contribua para uma comunidade mais consciente e para um
-                futuro mais sustentável.
-              </p>
-            </article>
-          </div>
+        <div className="z-2 flex w-full max-w-75 justify-center md:absolute md:right-[2%] md:bottom-0 md:max-w-135 xl:right-[4%] xl:max-w-155">
+          <img
+            src={imagemInicio}
+            alt="Pessoa sorrindo enquanto usa o celular e segura um cartão, representando as ações do dia a dia"
+            className="block max-h-120 w-full object-contain md:max-h-180 xl:max-h-205"
+          />
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }

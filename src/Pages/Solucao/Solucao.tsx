@@ -1,70 +1,91 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import TituloSecao from '../../components/TituloSecao/TituloSecao';
-import TelaSolucaoCard from '../../components/TelaSolucaoCard/TelaSolucaoCard';
-import { categoriasSolucao, telasSolucao } from '../../data/telasSolucao';
-import type { CategoriaSolucao } from '../../data/telasSolucao';
+import cell1 from '../../assets/img/cell-1.png';
+import cell2 from '../../assets/img/cell-2.png';
+import cell3 from '../../assets/img/cell-3.png';
+import cell4 from '../../assets/img/cell-4.png';
+import cell5 from '../../assets/img/cell-5.png';
+import cell6 from '../../assets/img/cell-6.png';
+import cell7 from '../../assets/img/cell-7.png';
+import cell8 from '../../assets/img/cell-8.png';
+import cell9 from '../../assets/img/cell-9.png';
+import cell10 from '../../assets/img/cell-10.png';
+import cell11 from '../../assets/img/cell-11.png';
+import imgArvore1 from '../../assets/img/img-arvore1.png';
+import imgArvore2 from '../../assets/img/img-arvore2.png';
+import imgArvore3 from '../../assets/img/img-arvore3.png';
+import imgArvore4 from '../../assets/img/img-arvore4.png';
+import imgArvore5 from '../../assets/img/img-arvore5.png';
+import imgFlorestaDigital from '../../assets/img/img-floresta-digital.png';
+import img93 from '../../assets/img/9 3.png';
 
-type FiltroSolucao = 'Todas' | CategoriaSolucao;
-const filtros: readonly FiltroSolucao[] = ['Todas', ...categoriasSolucao];
+const telasDesenvolvidas = [
+  { src: cell1, title: 'Missões e pontos' },
+  { src: cell2, title: 'Câmera da missão' },
+  { src: cell3, title: 'Envio de evidência' },
+  { src: cell4, title: 'Validação aprovada' },
+  { src: cell5, title: 'Missões concluídas' },
+  { src: cell6, title: 'Limite de tempo' },
+  { src: cell7, title: 'Detalhes da missão' },
+  { src: cell8, title: 'Feed da comunidade' },
+  { src: cell9, title: 'Perfil EcoMovement' },
+  { src: cell10, title: 'Formulário' },
+  { src: cell11, title: 'Perfil do usuário' },
+  { src: imgArvore1, title: 'Árvore 1' },
+  { src: imgArvore2, title: 'Árvore 2' },
+  { src: imgArvore3, title: 'Árvore 3' },
+  { src: imgArvore4, title: 'Árvore 4' },
+  { src: imgArvore5, title: 'Árvore 5' },
+  { src: imgFlorestaDigital, title: 'Floresta digital' },
+  { src: img93, title: 'Ranking' },
+];
 
 export default function Solucao() {
-  const [categoria, setCategoria] = useState<FiltroSolucao>('Todas');
-  const telasVisiveis = telasSolucao.filter(
-    (tela) => categoria === 'Todas' || tela.categoria === categoria,
-  );
-
   return (
-    <main className="mx-auto min-h-screen max-w-6xl px-6 py-14 md:py-20">
-      <TituloSecao
-        id="solucao-titulo"
-        nivel="h1"
-        etiqueta="Solução do projeto"
-        titulo="Conheça o EcoMovement por dentro."
-        descricao="Explore as telas do protótipo e veja como missões, conquistas e comunidade fazem parte da experiência. As imagens ilustram a proposta do aplicativo."
-      />
+    <>
+      <main className="w-full bg-white">
+        <section className="mx-auto grid w-full max-w-288 grid-cols-[minmax(0,1fr)_minmax(320px,.85fr)] items-center gap-12 px-6 pt-18 pb-16 max-[900px]:grid-cols-1 max-[900px]:gap-4 max-md:pt-14" aria-labelledby="solucao-intro-title">
+          <div className="max-w-168">
+            <p className="mb-2 text-xs font-extrabold tracking-[0.08em] text-brand uppercase">Prototipagem no Figma</p>
+            <h1 id="solucao-intro-title" className="mb-3 text-3xl font-bold leading-tight text-ink">Uma experiência sustentável pensada para acontecer na prática.</h1>
+            <p className="m-0 max-w-200 text-sm leading-relaxed text-muted [text-align:justify]">
+              A visualização das telas mostra como o EcoMovement transforma a identidade visual do
+              projeto em uma experiência simples, responsiva e conectada aos fluxos de missões,
+              validação, pontos e comunidade.
+            </p>
+            <p className="mt-4 mb-0 max-w-200 text-sm leading-relaxed text-muted [text-align:justify]">
+              O protótipo estabelece a identidade visual, a disposição dos elementos, o design
+              responsivo e a experiência intuitiva. A implementação transforma essas telas em um
+              sistema capaz de orientar missões, validar evidências e acompanhar a evolução de cada
+              usuário.
+            </p>
+          </div>
+          <div className="flex aspect-video w-full items-center justify-center rounded-2xl border border-line bg-[#f8fbfd] text-xs font-bold text-brand" aria-label="Espaço reservado para o vídeo do projeto">
+            <span>Vídeo do projeto</span>
+          </div>
+        </section>
 
-      <aside className="mt-8 rounded-2xl border border-line bg-slate-50 p-6" aria-label="Sobre a demonstração">
-        <p className="mb-0 text-sm leading-relaxed text-muted">
-          Esta galeria apresenta o protótipo. Os botões dentro das imagens fazem parte das telas ilustradas.
-          Use os filtros e os links de detalhes para navegar pela apresentação.
-        </p>
-      </aside>
+        <section className="mx-auto w-full max-w-288 px-6 pb-24" aria-labelledby="telas-title">
+          <div className="mb-10 max-w-192">
+            <p className="mb-2 text-xs font-extrabold tracking-[0.08em] text-brand uppercase">Telas desenvolvidas</p>
+            <h2 id="telas-title" className="mb-3 text-3xl font-bold leading-tight text-ink">Conheça a interface do EcoMovement.</h2>
+            <p className="mb-12 max-w-200 text-sm leading-relaxed text-muted [text-align:justify]">
+              Uma seleção das telas que representam os principais fluxos da plataforma, organizadas
+              para facilitar a leitura da jornada do usuário.
+            </p>
+          </div>
 
-      <section className="mt-12" aria-labelledby="galeria-titulo">
-        <h2 id="galeria-titulo" className="mb-5 text-2xl font-bold text-ink">Explore as telas</h2>
-        <div className="flex flex-wrap gap-3" role="group" aria-label="Filtrar telas por categoria">
-          {filtros.map((filtro) => (
-            <button
-              key={filtro}
-              type="button"
-              aria-pressed={categoria === filtro}
-              aria-controls="galeria-telas"
-              onClick={() => setCategoria(filtro)}
-              className={`min-h-11 cursor-pointer rounded-full border px-5 py-2 text-sm font-semibold transition-colors ${
-                categoria === filtro
-                  ? 'border-brand bg-brand text-white'
-                  : 'border-line bg-white text-ink hover:bg-slate-50'
-              }`}
-            >
-              {filtro}
-            </button>
-          ))}
-        </div>
-        <p className="mt-5 mb-6 text-sm text-muted" role="status" aria-live="polite" aria-atomic="true">
-          {telasVisiveis.length} telas em {categoria.toLocaleLowerCase('pt-BR')}.
-        </p>
-        <div id="galeria-telas" className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {telasVisiveis.map((tela) => <TelaSolucaoCard key={tela.id} tela={tela} />)}
-        </div>
-      </section>
+          <div className="grid grid-cols-4 items-start gap-x-6 gap-y-8 max-[900px]:grid-cols-3 max-md:grid-cols-2 max-md:gap-x-4 max-md:gap-y-7">
+            {telasDesenvolvidas.map((tela, index) => (
+              <figure className="m-0 text-center" key={tela.title}>
+                <div className="flex min-h-75 items-end justify-center max-md:min-h-55">
+                  <img className="block w-full max-w-47.5 transition hover:-translate-y-1.5 [filter:drop-shadow(0_10px_16px_rgb(15_23_42_/_0.12))]" src={tela.src} alt={`Tela ${index + 1}: ${tela.title}`} />
+                </div>
+                <figcaption className="mt-3.5 text-xs font-semibold text-muted">{tela.title}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+      </main>
 
-      <div className="mt-12 flex flex-col items-start gap-4 rounded-2xl bg-slate-50 p-6 sm:flex-row sm:items-center sm:justify-between">
-        <p className="mb-0 text-sm leading-relaxed text-muted">Quer entender as etapas de participação em uma missão?</p>
-        <Link to="/missoes" className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-xl border border-line bg-white px-5 py-3 text-sm font-semibold text-ink no-underline hover:bg-slate-100">
-          Abrir guia de missões
-        </Link>
-      </div>
-    </main>
+    </>
   );
 }

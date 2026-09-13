@@ -12,15 +12,6 @@
 }
 
 :root {
-  --text: #424242;
-  --text-h: #0f172a;
-  --bg: #fff;
-  --border: #dbe7ef;
-
-  --sans: "Poppins", "Segoe UI", Arial, sans-serif;
-  --heading: "Poppins", "Segoe UI", Arial, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
   --cor-texto-principal: #424242;
   --cor-texto-detalhes: #424242;
 
@@ -48,29 +39,17 @@
   --peso-titulo: 700;
 
   --gradiente-principal: linear-gradient(
-    90deg,
-    #80D7DE 0%,
-    #4CAEDD 13%,
-    #1885DB 25%,
-    #1B89DB 50%,
+    90deg, 
+    #80D7DE 0%, 
+    #4CAEDD 13%, 
+    #1885DB 25%, 
+    #1B89DB 50%, 
     #1372CE 100%
   );
-
-  font-family: var(--sans);
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 html,
@@ -82,25 +61,8 @@ body {
 }
 
 body {
-  min-width: 320px;
-  background: var(--bg);
-  font-family: var(--sans);
-  color: var(--cor-texto-principal);
-}
-
-#root {
-  width: 100%;
-  min-height: 100vh;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--heading);
-  color: var(--text-h);
+  font-family: var(--font-sans);
+  color: var(--cor-texto-principal); 
 }
 
 h1,
@@ -110,19 +72,9 @@ p {
   margin-top: 0;
 }
 
-button,
-a {
-  font-family: inherit;
-}
-
-button:focus-visible,
-a:focus-visible {
-  outline: 2px solid var(--color-brand);
-  outline-offset: 3px;
-}
-
-code {
-  font-family: var(--mono);
+#root {
+  width: 100%;
+  min-height: 100vh;
 }
 
 @keyframes page-enter {
