@@ -22,7 +22,7 @@ export default function Contato() {
 		reset();
 	}
 
-    	return (
+	return (
 		<>
       <main className="min-h-screen w-full bg-white px-6 pt-18 pb-24 max-md:pt-14">
         <section className="mx-auto mb-20 w-full max-w-168">
@@ -95,6 +95,7 @@ export default function Contato() {
 					</form>
 				</section>
 			</main>
+
 		</>
 	);
 }

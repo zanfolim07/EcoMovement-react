@@ -1,15 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-
 import Inicio from './Pages/Inicio/Inicio';
 import Home from './Pages/Home/Home';
 import Integrantes from './Pages/Integrantes/Integrantes';
+import Sobre from './Pages/Sobre/Sobre';
 import FAQ from './Pages/FAQ/FAQ';
 import Contato from './Pages/Contato/Contato';
-import Missoes from './Pages/Missao/Missao';
-import Sobre from './Pages/Sobre/Sobre';
 import Solucao from './Pages/Solucao/Solucao';
-import DetalheSolucao from './Pages/DetalheSolucao/DetalheSolucao';
-
+import Missoes from './Pages/Missao/Missao';
 import Layout from './components/Layout/Layout';
 
 export default function App() {
@@ -20,12 +17,11 @@ export default function App() {
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/integrantes" element={<Integrantes />} />
         <Route path="/integrantes/:memberId" element={<Integrantes />} />
+        <Route path="/sobre" element={<Sobre />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contato" element={<Contato />} />
-        <Route path="/missoes" element={<Missoes />} />
-        <Route path="/sobre" element={<Sobre />} />
         <Route path="/solucao" element={<Solucao />} />
-        <Route path="/solucao/:telaId" element={<DetalheSolucao />} />
+        <Route path="/missoes" element={<Missoes />} />
       </Route>
     </Routes>
   );
