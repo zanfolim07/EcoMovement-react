@@ -24,7 +24,7 @@ const teamMembers = [
     github: 'https://github.com/monteiroo5',
   },
   {
-    name: 'Jaime ringel',
+    name: 'Jaime Ringel',
     rm: 'RM 562044',
     photo: jaimeImg,
     linkedin: 'https://www.linkedin.com/in/jaime-ringel-1060bb402?utm_source=share_via&utm_content=profile&utm_medium=member_android',
@@ -41,10 +41,11 @@ const teamMembers = [
     name: 'Matheus Magalhães Romão de Moraes',
     rm: 'RM 573371',
     photo: matheusImg,
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/matheus-magalh%C3%A3es-ti',
+    github: 'https://github.com/MagalhaesMatheus007',
   },
 ];
+
 export default function Integrantes() {
   const { memberId } = useParams<{ memberId?: string }>();
 
@@ -71,7 +72,7 @@ export default function Integrantes() {
                 <img className="size-full object-cover" src={member.photo} alt={member.name} />
               </div>
               <h3 className="mb-3 flex h-11 items-center justify-center text-sm font-semibold text-ink">{member.name}</h3>
-              
+
               <div className="mb-3 flex justify-center gap-3">
                 <a className="text-[1.4rem] text-sky-500 transition-opacity hover:opacity-80" href={member.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin />
