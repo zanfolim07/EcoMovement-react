@@ -120,7 +120,7 @@ src/
 ## Links
 
 - [Repositório no GitHub](https://github.com/zanfolim07/EcoMovement-react)
-- Vídeo no YouTube: em produção.
+
 
 ## Contato
 
