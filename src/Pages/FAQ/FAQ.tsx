@@ -1,146 +1,156 @@
-
 const faqSections = [
 	{
-		title: 'Sobre o EcoMovement',
+		title: 'Sobre o desafio e o projeto',
 		questions: [
 			{
-				question: 'O que é o EcoMovement?',
+				question: 'O que são o EcoMovement e o EcoGuard?',
 				answer:
-					'O EcoMovement é uma solução de gamificação sustentável desenvolvida para o ecossistema SoulUp. A plataforma transforma ações realizadas no mundo real em missões que geram pontos, progresso e benefícios, incentivando hábitos mais sustentáveis.',
+					'O EcoMovement é a camada de produto: missões, EcoScore, EcoPoints, ranking, árvore digital, floresta digital e badges — é a experiência que o usuário vê dentro da SoulUp. O EcoGuard é a camada de confiança: o motor de regras e antifraude que decide se uma submissão é válida, cruzando o resultado da IA com GPS, tempo, frequência e histórico do usuário.',
 			},
 			{
-				question: 'Como o EcoMovement funciona?',
+				question: 'Qual é o contexto do projeto?',
 				answer:
-					'O usuário escolhe uma missão, realiza a atividade e envia a comprovação solicitada. Depois da validação, recebe pontos e avança em sua jornada dentro da plataforma. Esses pontos podem ser utilizados em benefícios previstos pelo sistema, como transporte público e doações para ONGs.',
+					'O desafio faz parte de um challenge da FIAP em parceria com a SoulUp, contando como nota de avaliação prática do semestre. A SoulUp é a plataforma digital da Prospera, empresa brasileira de sustentabilidade e consumo consciente que, em 2025, adquiriu a startup SoulPrime e incorporou sua tecnologia e comunidade. O grupo escolhe um entre três temas de mesma complexidade, e todos os projetos competem entre si, com critérios definidos previamente pela banca.',
 			},
 			{
-				question: 'Quais tipos de missões existem?',
+				question: 'Qual é o problema central que a solução resolve?',
 				answer:
-					'As missões são organizadas em categorias como hábitos sustentáveis, saúde e movimento, mobilidade sustentável, educação e conexão com a natureza.',
+					'Transformar ações sustentáveis do mundo real em elementos verificáveis e pontuáveis dentro da SoulUp — sem abrir brecha para fraude, sem travar com o crescimento da base de usuários, e sem custar caro demais pra manter.',
 			},
 		],
 	},
 	{
-		title: 'Missões e validação',
+		title: 'Missões',
 		questions: [
 			{
-				question: 'Como uma missão é validada?',
+				question: 'Como funciona o fluxo de análise de uma missão?',
 				answer:
-					'O método depende da atividade. Uma missão pode exigir vídeo, foto, QR Code, geolocalização, registro de horário ou tempo mínimo de permanência. Fotos e vídeos também podem ser analisados por inteligência artificial.',
+					'O fluxo segue as etapas: ação → impacto ambiental → fonte → medição → evidência → validação → risco de fraude → proteção → EcoScore → pontuação → recompensa.',
 			},
 			{
-				question: 'Por que algumas missões utilizam QR Code?',
+				question: 'O que compõe a ficha técnica de uma missão?',
 				answer:
-					'O QR Code ajuda a confirmar que o usuário esteve em um local parceiro ou participou de uma atividade específica. Em algumas situações, o sistema pode registrar entrada, saída e tempo de permanência.',
+					'Cada missão tem nome e categoria, descrição da ação, impacto ambiental, fonte, unidade de medição, evidência, validação, o que a IA deve identificar, se exige GPS/QR Code, frequência permitida, riscos de fraude, proteções aplicadas e nível de dificuldade.',
 			},
 			{
-				question: 'Por que o aplicativo pode solicitar minha localização?',
+				question: 'Quais são as missões do catálogo e quantos pontos valem?',
 				answer:
-					'A localização pode ser necessária para validar missões relacionadas a deslocamento, caminhada, bicicleta, transporte público ou presença em locais parceiros. A permissão é solicitada de acordo com a necessidade da funcionalidade.',
+					'O catálogo inclui: 20 posts com #Sustentabilidade e #EcoMovement (20 pts); 10 Moments com as mesmas hashtags (20 pts); adquirir 5/10/15 badges, de forma progressiva (10/30/50 pts); engajar em 10 perfis de ONGs seguindo e curtindo 10 posts/moments/clipz (30 pts); evoluir a árvore digital 5 vezes (50 pts); adicionar a árvore digital à floresta de uma comunidade (30 pts); e distribuir frutos na árvore de 5/10/15 usuários (20/40/60 pts).',
 			},
 			{
-				question: 'O que acontece se uma missão não for validada?',
+				question: 'Que tipos de evidência uma missão pode exigir?',
 				answer:
-					'A ação não gera a pontuação correspondente enquanto não atender aos critérios de validação definidos para aquela missão.',
+					'Foto, quando a ação tem resultado visual verificável; vídeo, só quando é necessário observar uma sequência de ações (não é obrigatório em todas as missões, por custo de armazenamento e processamento); GPS, quando o local ou deslocamento faz parte da comprovação; QR Code, quando existe um local, evento ou parceiro que pode confirmar a ação, com proteção contra reutilização; e OCR, que transforma documentos como contas e comprovantes em dados estruturados.',
 			},
 		],
 	},
 	{
-		title: 'Pontos e benefícios',
+		title: 'EcoScore, EcoPoints e ranking',
 		questions: [
 			{
-				question: 'Como ganho pontos?',
+				question: 'Como o EcoScore é calculado?',
 				answer:
-					'Os pontos são obtidos principalmente pela conclusão de missões validadas e pela participação em quizzes e desafios educacionais disponíveis na plataforma.',
+					'Cada submissão validada gera um EcoScore de 0 a 100, calculado com pesos fixos e versionados: impacto ambiental (40%), intensidade/escala da ação (20%), qualidade da evidência (20%), dificuldade da missão (10%) e consistência do usuário (10%). Um campo de versionamento acompanha cada pontuação, permitindo evoluir a fórmula no futuro sem invalidar o histórico.',
 			},
 			{
-				question: 'Quanto vale cada ponto?',
+				question: 'O que são EcoPoints?',
 				answer:
-					'Nos pontos elegíveis para conversão, a regra atual considera 1 ponto = R$ 0,01. As conversões seguem os limites e as regras definidos para cada plano e benefício.',
+					'São a soma acumulada dos EcoScores válidos do usuário, usados para ranking, badges, níveis, desafios e metas individuais e coletivas. A conversão de EcoScore para EcoPoints é 1:1 por submissão, já que a dificuldade da ação já está embutida no próprio EcoScore.',
 			},
 			{
-				question: 'Posso usar meus pontos no transporte público?',
+				question: 'Como o ranking funciona sem ficar lento com muitos usuários?',
 				answer:
-					'Sim. A proposta do EcoMovement permite utilizar pontos para subsidiar total ou parcialmente o transporte público por meio de créditos ou vouchers. A integração direta com sistemas de bilhetagem faz parte da evolução futura da solução.',
+					'A leitura do ranking nunca soma o EcoScore em tempo real. Existe uma camada de agregado, atualizada por job periódico/incremental, servida por um cache em memória (como um Redis Sorted Set) em produção. O banco relacional continua sendo a fonte da verdade, mas não é consultado diretamente a cada exibição do ranking.',
 			},
 			{
-				question: 'Posso doar meus pontos?',
-				answer: 'Sim. O usuário pode converter pontos em doações para ONGs parceiras diretamente pela plataforma.',
+				question: 'Como o ranking é calculado?',
+				answer:
+					'O ranking do usuário corresponde ao número total de pontos acumulados, somado a mais 10% desse total a cada missão concluída.',
 			},
 			{
-				question: 'Como funcionam as doações para ONGs?',
+				question: 'Qual é a recompensa principal e como termina a competição?',
 				answer:
-					'Os pontos doados são convertidos em valor financeiro. Pela regra atual, 85% do valor convertido é destinado à ONG e 15% é utilizado pela plataforma como taxa de operação e manutenção. Os repasses são consolidados mensalmente e a plataforma prevê informações de transparência sobre as organizações e os projetos apoiados.',
-			},
-			{
-				question: 'O que são Pontos de Impacto?',
-				answer:
-					'Quando o usuário ultrapassa o limite mensal de pontos conversíveis do seu plano, os pontos excedentes continuam registrados como Pontos de Impacto, mantendo o reconhecimento da participação e da evolução sustentável dentro da plataforma.',
+					'A recompensa principal é a cobertura integral da conta de energia elétrica do usuário com maior pontuação ao final do período de competição, 30 dias após seu início. O encerramento segue um processo de apuração transparente: congelamento do ranking (submissões após o corte não contam), cálculo da pontuação final por um job de agregação, aplicação de regras de desempate se necessário (número de missões concluídas, menor número de submissões rejeitadas por fraude e consistência do desempenho), confirmação do vencedor e, por fim, processamento da recompensa de forma auditável.',
 			},
 		],
 	},
 	{
-		title: 'Planos',
+		title: 'Antifraude — EcoGuard',
 		questions: [
 			{
-				question: 'Quais planos estão disponíveis?',
+				question: 'Como o EcoGuard decide se uma submissão é válida?',
 				answer:
-					'O EcoMovement possui três modalidades: Free, Plus e Pro. O Free permite até 2 missões por dia, o Plus até 4 missões por dia e o Pro até 6 missões por dia. Cada plano possui limites e benefícios diferentes relacionados a missões, conversão de pontos, histórico, recursos de impacto e personalização.',
+					'O pipeline segue evidência → IA → resultados da análise → regras do sistema (EcoGuard) → decisão. A IA nunca decide sozinha: ela devolve sinais, como objeto identificado, categoria, confiança e duplicidade, que alimentam o motor de regras, que também considera GPS, horário, frequência e histórico do usuário.',
 			},
 			{
-				question: 'Preciso pagar para usar o EcoMovement?',
+				question: 'Quais são as camadas de verificação do EcoGuard?',
 				answer:
-					'Não. O plano Free permite utilizar as principais funcionalidades da plataforma. Os planos Plus e Pro ampliam limites e oferecem recursos adicionais.',
+					'Toda submissão passa por até 6 camadas, aplicadas conforme o tipo de evidência exigido: evidência (se o material corresponde ao exigido), temporal (data, horário, intervalo mínimo, validade do QR Code), geográfica (localização e deslocamento coerentes), visual (imagens duplicadas ou manipuladas), comportamental (frequência anormal ou tentativas consecutivas) e cruzamento de dados (por exemplo, GPS + foto, ou QR Code + GPS).',
+			},
+			{
+				question: 'O dinheiro pode comprar vantagem no ranking?',
+				answer:
+					'Não. Nenhum plano pago pode vender EcoPoints ou vantagem de pontuação, nem hoje, nem em planos pagos futuros — essa regra também é reforçada a nível de permissão de sistema, não só na interface.',
 			},
 		],
 	},
 	{
-		title: 'Gamificação e comunidade',
+		title: 'Árvore Digital e Floresta Digital',
 		questions: [
 			{
-				question: 'O que é a Árvore Emocional?',
+				question: 'O que é a Árvore Digital?',
 				answer:
-					'É uma representação visual da evolução do usuário. A árvore cresce conforme a pessoa realiza missões e mantém consistência. Ao final de cada ciclo mensal, ocorre um reinício simbólico, enquanto o histórico permanece registrado no Jardim Pessoal.',
+					'É uma árvore que cada usuário tem, acessível no próprio perfil por um ícone minimalista verde. Ela começa morta, marrom-acinzentada e sem folhas, e evolui engajando com posts/clipz/moments com as hashtags do movimento (progride pouco), completando missões (forma mais confiável de progredir) e acumulando badges (o que mais avança o nível), até chegar a uma árvore grande, viva, cheia de folhas, frutos e, nos níveis finais, flores. Subir de nível concede badges exclusivos.',
 			},
 			{
-				question: 'O que é a Floresta Coletiva?',
+				question: 'Como funcionam os frutos da árvore?',
 				answer:
-					'É um espaço virtual que representa o progresso da comunidade. As ações sustentáveis realizadas pelos usuários contribuem para o crescimento coletivo da floresta.',
+					'O usuário pode distribuir frutos na árvore de outros usuários, o que progride missões e rende pontos. Os frutos não são infinitos: são obtidos esperando a própria árvore produzir (no nível inicial não produz nada; subir de nível reduz o tempo de espera e, nos níveis finais, aumenta a quantidade gerada) ou recebendo de outros usuários, já que cada fruto deixado na árvore de alguém vira um fruto disponível para quem recebeu.',
 			},
 			{
-				question: 'O que são os broches?',
+				question: 'O que é a Floresta Digital?',
 				answer:
-					'Os broches são conquistas obtidas por participação, quantidade de missões concluídas, desempenho em categorias e marcos especiais de consistência.',
-			},
-			{
-				question: 'Existe ranking?',
-				answer:
-					'Sim. A plataforma prevê ranking geral e ranking entre amigos, permitindo acompanhar a evolução e comparar a participação de forma gamificada.',
-			},
-			{
-				question: 'Como funcionam os quizzes?',
-				answer:
-					'Os quizzes fazem parte da área de educação da plataforma. Eles permitem aprender sobre sustentabilidade, avançar em trilhas e acumular pontos e conquistas. Os limites de participação variam conforme o plano.',
+					'É a expansão coletiva do sistema de árvores, por comunidade. Começa morta, como a árvore no início, e cresce pelo mesmo tipo de ação (engajamento, missões, badges), mas em ritmo mais lento, exigindo que vários usuários engajem simultaneamente. As árvores dos usuários ficam visíveis dentro da floresta, e o nível da árvore de cada um concede progresso a ela. Florestas no top 10 mais desenvolvidas garantem alta recompensa em pontos e badges exclusivos.',
 			},
 		],
 	},
 	{
-		title: 'Privacidade e segurança',
+		title: 'Badges',
 		questions: [
 			{
-				question: 'Como o EcoMovement protege a integridade das missões?',
+				question: 'Como os badges funcionam?',
 				answer:
-					'A plataforma combina diferentes mecanismos de validação, como câmera própria no aplicativo, registro de horário, geolocalização, QR Codes, tempo de permanência e análise de fotos ou vídeos por inteligência artificial.',
+					'São colecionáveis adquiridos de formas diferentes: via missões, engajamento com outros usuários e progressão da árvore/floresta. Ficam visíveis na aba "Badges" do perfil, dispostos em uma faixa estilo escoteiro, e sob cada badge aparece o percentual de usuários que já o desbloquearam e a data de aquisição.',
 			},
 			{
-				question: 'Posso controlar as permissões do aplicativo?',
+				question: 'Como funcionam os efeitos visuais de raridade dos badges?',
 				answer:
-					'Sim. As configurações de privacidade permitem gerenciar permissões relacionadas a câmera, microfone, localização e galeria, além de opções de visibilidade do perfil, ranking e Floresta Coletiva.',
+					'Quanto menor o percentual de usuários que desbloquearam um badge, mais chamativo o efeito: menos de 30% recebe um leve brilho branco; menos de 15%, um brilho esverdeado um pouco mais forte; menos de 7%, um brilho azulado forte com destaque no topo da faixa; e menos de 4%, um brilho dourado forte, também com destaque no topo da faixa.',
+			},
+		],
+	},
+	{
+		title: 'Segurança e privacidade',
+		questions: [
+			{
+				question: 'Como a segurança da aplicação é garantida?',
+				answer:
+					'Com validação rigorosa de entrada (tipo, tamanho e formato de arquivo, coordenadas de GPS, texto de OCR), sanitização de dados antes de qualquer persistência ou exibição, tratamento seguro de erros — sem expor stack trace, nome de tabela ou query ao usuário —, proteção contra exploração de endpoints, rate limiting em rotas sensíveis e boas práticas alinhadas a riscos conhecidos de aplicações web e APIs.',
 			},
 			{
-				question: 'Como posso acompanhar minhas doações?',
+				question: 'Como o acesso aos dados é controlado?',
 				answer:
-					'A plataforma prevê histórico de doações, comprovantes, informações das ONGs parceiras, projetos apoiados e indicadores públicos de impacto social.',
+					'A autenticação usa token com expiração e renovação controlada, reaproveitando o mecanismo já existente da SoulUp. Existe controle de acesso por papéis (usuário comum, moderador de missões e administrador do EcoGuard), toda consulta é filtrada pelo id do usuário autenticado no backend (nunca confiando em id enviado pelo cliente), o serviço de planos/pagamentos não tem nenhuma permissão de escrita sobre EcoScore, EcoPoints ou ranking, e toda listagem tem paginação obrigatória e limite de profundidade de consulta.',
+			},
+			{
+				question: 'Como os dados dos usuários são protegidos?',
+				answer:
+					'Toda comunicação da API usa HTTPS/TLS, senhas são armazenadas com hash e salt, a coleta de dados é minimizada — por exemplo, a evidência guarda só o GPS do momento da submissão, sem histórico contínuo de localização — e há separação entre dados pessoais (identidade) e dados analíticos (pontuação, ranking, análise de IA).',
+			},
+			{
+				question: 'Como funcionam os logs e a auditoria?',
+				answer:
+					'Ações críticas são registradas, como mudança de status de submissão, geração/uso de QR Code, confirmação de vencedor e processamento de premiação. Também há rastreabilidade de consultas sensíveis (quem consultou o histórico de quem, e quando), controle sobre o que vai para o log — a evidência bruta nunca vai para o log, só referências — e auditoria periódica cruzando decisões automáticas do EcoGuard com decisões manuais de moderação.',
 			},
 		],
 	},
@@ -154,8 +164,8 @@ export default function FAQ() {
           <p className="mb-2 text-xs font-extrabold tracking-[0.08em] text-brand uppercase">Central de ajuda</p>
           <h1 className="mt-2 mb-3 text-3xl font-bold leading-tight text-ink">Perguntas frequentes</h1>
           <p className="m-0 max-w-168 text-sm leading-relaxed text-muted [text-align:justify]">
-						Encontre respostas sobre missões, pontos, planos, benefícios, comunidade e segurança
-						dentro do EcoMovement.
+						Encontre respostas sobre o projeto, missões, EcoScore, EcoPoints, ranking, antifraude,
+						árvore e floresta digital, badges e segurança dentro do EcoMovement.
 					</p>
 				</header>
 

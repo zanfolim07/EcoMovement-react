@@ -1,80 +1,79 @@
-
 const steps = [
     {
         number: '01',
-        title: 'Realize missões sustentáveis',
+        title: 'Realize a missão',
         description:
-            'Participe de missões relacionadas a hábitos sustentáveis, saúde e movimento, mobilidade, educação e conexão com a natureza.',
+            'Escolha uma missão a partir da sua ficha técnica: nome, categoria, descrição da ação, impacto ambiental e nível de dificuldade.',
     },
     {
         number: '02',
-        title: 'Comprove a ação',
+        title: 'Comprove com a evidência certa',
         description:
-            'Cada missão possui uma validação adequada, que pode usar vídeo, foto, QR Code, geolocalização e tempo de permanência.',
+            'Cada missão pede o tipo de evidência mais adequado: foto, vídeo, GPS, QR Code ou OCR, conforme a natureza da ação.',
     },
     {
         number: '03',
-        title: 'Acumule pontos',
+        title: 'O EcoGuard valida a ação',
         description:
-            'Após a validação, a missão gera pontos. Quizzes e desafios educacionais também contribuem para sua evolução.',
+            'A IA fornece sinais (objeto identificado, categoria, confiança, duplicidade), mas quem decide é o motor de regras do EcoGuard, cruzando esses sinais com GPS, horário, frequência e histórico em até 6 camadas de verificação.',
     },
     {
         number: '04',
-        title: 'Transforme pontos em benefícios',
+        title: 'Receba seu EcoScore e acumule EcoPoints',
         description:
-            'Use seus pontos em benefícios previstos pela plataforma, como créditos de transporte público e doações para ONGs parceiras.',
+            'Cada submissão validada gera um EcoScore de 0 a 100, com pesos para impacto ambiental, intensidade, evidência, dificuldade e consistência. Os EcoPoints são a soma de todos os EcoScores válidos.',
     },
     {
         number: '05',
         title: 'Acompanhe sua evolução',
         description:
-            'Veja seu progresso pela Árvore Emocional, pela Floresta Coletiva, pelos broches, pelo ranking e pelo histórico de participação.',
+            'Veja seu progresso pela Árvore Digital, pela Floresta Digital da sua comunidade, pelos badges conquistados e pelo ranking.',
     },
 ];
 
 const impactAreas = [
     {
-        title: 'Sustentabilidade no cotidiano',
+        title: 'Missões que cobrem o essencial',
         description:
-            'As missões aproximam a sustentabilidade da rotina, incentivando transporte público, caminhada, bicicleta, reciclagem, itens reutilizáveis e participação em ações ambientais.',
+            'O catálogo inclui posts e Moments com as hashtags do movimento, engajamento com perfis de ONGs, evolução da árvore digital, adição da árvore a uma floresta de comunidade e distribuição de frutos entre usuários.',
     },
     {
-        title: 'Mobilidade sustentável',
+        title: 'Ranking com recompensa real',
         description:
-            'Os pontos podem subsidiar total ou parcialmente o transporte público por meio de créditos ou vouchers. O modelo pode evoluir para integrações com operadores e sistemas de bilhetagem.',
+            'O usuário com maior pontuação ao final de 30 dias de competição recebe a cobertura integral da conta de energia elétrica, com um processo de encerramento auditável: congelamento do ranking, cálculo da pontuação final, desempate e confirmação do vencedor.',
     },
     {
-        title: 'Impacto social',
+        title: 'Floresta Coletiva com prêmio para o Top 10',
         description:
-            'Os pontos também podem ser convertidos em doações para ONGs parceiras, com uma área de transparência para mostrar organizações, projetos, valores e comprovantes.',
+            'Florestas que ficam entre as 10 mais desenvolvidas garantem alta recompensa em pontos e badges exclusivos para os usuários da comunidade.',
     },
 ];
 
 const ecosystemFeatures = [
     {
-        title: 'Árvore Emocional',
+        title: 'Árvore Digital',
         description:
-            'Representa a evolução sustentável de cada usuário. Com consistência, ela cresce, floresce e evolui; ao final de cada ciclo mensal há um reinício simbólico, enquanto o histórico permanece no Jardim Pessoal.',
+            'Começa morta, marrom-acinzentada e sem folhas, e evolui conforme o usuário engaja com conteúdos do movimento, completa missões e acumula badges, até virar uma árvore cheia de folhas, frutos e, nos níveis finais, flores.',
     },
     {
-        title: 'Floresta Coletiva',
+        title: 'Floresta Digital',
         description:
-            'Representa o progresso da comunidade. As ações individuais fazem a floresta virtual crescer e reforçam a ideia de que pequenas atitudes formam um impacto coletivo maior.',
+            'É a expansão coletiva do sistema de árvores por comunidade. Cresce pelo mesmo tipo de ação, mas em ritmo mais lento, exigindo que vários usuários engajem ao mesmo tempo, e reúne visivelmente as árvores de todos os participantes.',
     },
     {
-        title: 'Broches e conquistas',
+        title: 'Badges',
         description:
-            'Reconhecem participação e consistência. Podem ser conquistados por missões concluídas, desempenho em categorias e conquistas especiais ao longo da jornada.',
+            'Colecionáveis adquiridos por missões, engajamento e progressão da árvore/floresta, exibidos em uma faixa estilo escoteiro no perfil, com efeitos visuais que ficam mais chamativos quanto mais raro é o badge.',
     },
 ];
 
 const values: [string, string][] = [
-    ['Sustentabilidade prática', 'Incentivar atitudes que possam fazer parte da rotina.'],
-    ['Transparência', 'Mostrar de forma clara como pontos, benefícios e doações funcionam.'],
-    ['Segurança', 'Proteger a integridade das missões e dos dados dos usuários.'],
-    ['Acessibilidade', 'Permitir que diferentes perfis participem e evoluam na plataforma.'],
-    ['Engajamento', 'Usar gamificação para estimular consistência e participação.'],
-    ['Impacto coletivo', 'Conectar ações individuais a benefícios para a comunidade e o meio ambiente.'],
+    ['Verificação real', 'Cada ação é comprovada por evidência — foto, vídeo, GPS, QR Code ou OCR — antes de gerar qualquer pontuação.'],
+    ['Decisão nunca só da IA', 'A IA fornece sinais, mas quem decide a validade de uma submissão é o motor de regras do EcoGuard, cruzando GPS, horário, frequência e histórico.'],
+    ['Sem vantagem comprada', 'Nenhum plano pago pode vender EcoPoints ou vantagem de pontuação, nem hoje, nem em planos pagos futuros.'],
+    ['Transparência na apuração', 'O encerramento da competição segue um processo auditável: congelamento do ranking, cálculo da pontuação final, desempate e confirmação do vencedor.'],
+    ['Escalabilidade', 'O ranking nunca é somado em tempo real — uma camada de agregado com cache garante performance mesmo com o crescimento da base de usuários.'],
+    ['Custo consciente', 'Vídeo não é exigido por padrão; foto, QR Code e OCR cobrem a maior parte das missões, mantendo o sistema mais barato de operar.'],
 ];
 
 export default function Sobre() {
@@ -84,24 +83,26 @@ export default function Sobre() {
                 <section className="mx-auto grid w-full max-w-240 gap-2 px-6 pt-18 pb-4">
                     <div>
                         <p className="mb-2 text-xs font-extrabold tracking-[0.08em] text-brand uppercase">Nossa proposta</p>
-                        <h2 className="mt-2 mb-3 max-w-168 text-3xl font-bold leading-tight text-ink">Transformando ações do dia a dia em progresso mensurável.</h2>
+                        <h2 className="mt-2 mb-3 max-w-168 text-3xl font-bold leading-tight text-ink">Transformando ações do dia a dia em pontos verificáveis.</h2>
                     </div>
                     <p className="mt-2 max-w-192 text-sm leading-relaxed text-muted [text-align:justify]">
-                        O EcoMovement incentiva ações sustentáveis por meio de missões, desafios e quizzes.
-                        Atividades realizadas no mundo real se transformam em pontos, progresso e benefícios
-                        para o usuário e para a comunidade, de forma simples, motivadora e mensurável.
+                        O EcoMovement transforma ações sustentáveis do mundo real em elementos verificáveis e
+                        pontuáveis dentro da SoulUp — sem abrir brecha para fraude, sem travar com o crescimento
+                        da base de usuários e sem custar caro demais para manter.
                     </p>
                 </section>
 
                 <section className="mx-auto grid w-full max-w-240 gap-2 px-6 pt-14">
                     <div className="max-w-168">
                         <p className="mb-2 text-xs font-extrabold tracking-[0.08em] text-brand uppercase">Nosso propósito</p>
-                        <h2 className="mt-2 text-2xl font-bold leading-tight text-ink">Escolhas melhores precisam caber na vida real.</h2>
+                        <h2 className="mt-2 text-2xl font-bold leading-tight text-ink">Duas camadas trabalhando juntas.</h2>
                     </div>
                     <p className="mt-2 max-w-192 text-sm leading-relaxed text-muted [text-align:justify]">
-                        Tornar escolhas sustentáveis mais acessíveis, frequentes e recompensadoras, incentivando
-                        mudanças positivas de comportamento por meio de tecnologia, gamificação e benefícios que
-                        tenham valor real para o usuário.
+                        O EcoMovement é a camada de produto: missões, EcoScore, EcoPoints, ranking, árvore
+                        digital, floresta digital e badges — a experiência que o usuário vê dentro da SoulUp.
+                        O EcoGuard é a camada de confiança: o motor de regras e antifraude que decide se uma
+                        submissão é válida, cruzando o resultado da IA com GPS, tempo, frequência e histórico
+                        do usuário.
                     </p>
                 </section>
 
@@ -156,13 +157,15 @@ export default function Sobre() {
                         <p className="mb-2 text-xs font-extrabold tracking-[0.08em] text-brand uppercase">Segurança e validação</p>
                         <h2 className="mt-2 max-w-168 text-2xl font-bold leading-tight text-ink">Integridade para que cada ponto represente uma ação real.</h2>
                         <p className="mb-0 max-w-208 text-sm leading-relaxed text-muted [text-align:justify]">
-                            O EcoMovement usa diferentes formas de validação conforme a atividade: câmera dentro
-                            do aplicativo, geolocalização, horário, tempo mínimo, QR Codes em locais parceiros e
-                            análise de fotos ou vídeos por inteligência artificial.
+                            Toda submissão passa por até 6 camadas de verificação do EcoGuard — evidência, temporal,
+                            geográfica, visual, comportamental e cruzamento de dados. A IA nunca é prova absoluta:
+                            ela só fornece sinais, e quem decide é o motor de regras, cruzando-os com GPS, horário,
+                            frequência e histórico do usuário.
                         </p>
                         <p className="mb-0 max-w-208 text-sm leading-relaxed text-muted [text-align:justify]">
-                            As permissões são solicitadas conforme a necessidade de cada funcionalidade. O usuário
-                            pode gerenciar acessos à câmera, ao microfone, à localização e à galeria.
+                            A proteção de dados inclui comunicação segura por HTTPS/TLS, senhas armazenadas com
+                            hash e salt, minimização dos dados coletados e separação entre dados pessoais e
+                            dados analíticos.
                         </p>
                     </div>
                 </section>
@@ -170,13 +173,13 @@ export default function Sobre() {
                 <section className="mx-auto grid w-full max-w-240 gap-10 px-6 pt-18">
                     <div>
                         <p className="mb-2 text-xs font-extrabold tracking-[0.08em] text-brand uppercase">Missão</p>
-                        <h2 className="mt-2 max-w-100 text-2xl font-bold leading-tight text-ink">Unir tecnologia, gamificação, mobilidade e impacto social.</h2>
-                        <p className="max-w-120 text-sm leading-relaxed text-muted [text-align:justify]">Incentivar práticas sustentáveis por meio de uma experiência digital acessível e motivadora.</p>
+                        <h2 className="mt-2 max-w-100 text-2xl font-bold leading-tight text-ink">Transformar ações sustentáveis em elementos verificáveis e pontuáveis.</h2>
+                        <p className="max-w-120 text-sm leading-relaxed text-muted [text-align:justify]">Sem abrir brecha para fraude, sem travar com o crescimento da base de usuários e sem custar caro demais para manter.</p>
                     </div>
                     <div className="border-t border-line pt-8">
                         <p className="mb-2 text-xs font-extrabold tracking-[0.08em] text-brand uppercase">Visão</p>
-                        <h2 className="mt-2 max-w-100 text-2xl font-bold leading-tight text-ink">Ser referência em gamificação sustentável.</h2>
-                        <p className="max-w-120 text-sm leading-relaxed text-muted [text-align:justify]">Criar uma comunidade em que ações positivas gerem benefícios individuais e impacto coletivo.</p>
+                        <h2 className="mt-2 max-w-100 text-2xl font-bold leading-tight text-ink">Ser a camada de confiança da SoulUp.</h2>
+                        <p className="max-w-120 text-sm leading-relaxed text-muted [text-align:justify]">Fazer com que cada EcoScore e cada EcoPoint representem, de fato, uma ação sustentável real e verificada.</p>
                     </div>
                 </section>
 
