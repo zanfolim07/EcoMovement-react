@@ -42,24 +42,23 @@ export default function Solucao() {
   return (
     <>
       <main className="w-full bg-white">
-        <section className="mx-auto grid w-full max-w-288 grid-cols-[minmax(0,1fr)_minmax(320px,.85fr)] items-center gap-12 px-6 pt-18 pb-16 max-[900px]:grid-cols-1 max-[900px]:gap-4 max-md:pt-14" aria-labelledby="solucao-intro-title">
-          <div className="max-w-168">
+        <section className="mx-auto w-full max-w-288 px-6 pt-18 pb-16 max-md:pt-14" aria-labelledby="solucao-intro-title">
+          <div className="w-full">
             <p className="mb-2 text-xs font-extrabold tracking-[0.08em] text-brand uppercase">Prototipagem no Figma</p>
-            <h1 id="solucao-intro-title" className="mb-3 text-3xl font-bold leading-tight text-ink">Uma experiência sustentável pensada para acontecer na prática.</h1>
-            <p className="m-0 max-w-200 text-sm leading-relaxed text-muted [text-align:justify]">
-              A visualização das telas mostra como o EcoMovement transforma a identidade visual do
-              projeto em uma experiência simples, responsiva e conectada aos fluxos de missões,
-              validação, pontos e comunidade.
-            </p>
-            <p className="mt-4 mb-0 max-w-200 text-sm leading-relaxed text-muted [text-align:justify]">
-              O protótipo estabelece a identidade visual, a disposição dos elementos, o design
-              responsivo e a experiência intuitiva. A implementação transforma essas telas em um
-              sistema capaz de orientar missões, validar evidências e acompanhar a evolução de cada
-              usuário.
-            </p>
-          </div>
-          <div className="flex aspect-video w-full items-center justify-center rounded-2xl border border-line bg-[#f8fbfd] text-xs font-bold text-brand" aria-label="Espaço reservado para o vídeo do projeto">
-            <span>Vídeo do projeto</span>
+            <h1 id="solucao-intro-title" className="mb-3 max-w-200 text-3xl font-bold leading-tight text-ink">Uma experiência sustentável pensada para acontecer na prática.</h1>
+            <div className="grid grid-cols-2 gap-x-12 max-md:grid-cols-1 max-md:gap-y-4">
+              <p className="m-0 text-sm leading-relaxed text-muted [text-align:justify]">
+                A visualização das telas mostra como o EcoMovement transforma a identidade visual do
+                projeto em uma experiência simples, responsiva e conectada aos fluxos de missões,
+                validação, pontos e comunidade.
+              </p>
+              <p className="m-0 text-sm leading-relaxed text-muted [text-align:justify]">
+                O protótipo estabelece a identidade visual, a disposição dos elementos, o design
+                responsivo e a experiência intuitiva. A implementação transforma essas telas em um
+                sistema capaz de orientar missões, validar evidências e acompanhar a evolução de cada
+                usuário.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -88,4 +87,4 @@ export default function Solucao() {
 
     </>
   );
-}
+} 

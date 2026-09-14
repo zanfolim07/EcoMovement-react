@@ -83,9 +83,9 @@ export default function Contato() {
               {errors.mensagem && <span className="text-xs text-red-600">{errors.mensagem.message}</span>}
 						</div>
 
-            <Button type="submit" className="mt-1 w-full bg-brand text-white hover:bg-brand-dark">
-							Enviar
-						</Button>
+            <Button type="submit" className="mt-1 w-full !bg-brand !text-white hover:!bg-brand-dark">
+  					Enviar
+			</Button>
 
 						{isSent && (
               <p className="mt-4 mb-0 text-center text-xs leading-relaxed text-green-700" role="status">

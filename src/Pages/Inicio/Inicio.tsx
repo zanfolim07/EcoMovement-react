@@ -180,18 +180,18 @@ export default function Inicio(): React.JSX.Element {
 
         <div id="feature-box" className="relative mx-auto mb-20 flex max-w-288 flex-col rounded-2xl bg-brand px-6 pt-10 pb-12 md:mb-24 md:flex-row md:px-12 md:py-14">
           {introFeatures.map((feature) => (
-            <div key={feature.title} className="flex-1 border-b border-white/25 py-6 last:border-0 md:border-r md:border-b-0 md:px-6 md:first:pl-0 md:last:border-0 md:last:pr-0">
+            <div key={feature.title} className="flex-1 border-b-2 border-white/40 py-6 last:border-0 md:border-r-2 md:border-b-0 md:px-6 md:first:pl-0 md:last:border-0 md:last:pr-0">
               <h3 className="mb-2 text-xl font-bold text-white">{feature.title}</h3>
               <p className="m-0 text-sm leading-relaxed text-white/85 [text-align:justify]">{feature.description}</p>
             </div>
           ))}
 
-          <a href="#proxima-secao" className="absolute right-3 bottom-3 flex size-12.5 items-center justify-center rounded-full bg-white text-brand no-underline transition hover:scale-108" aria-label="Avançar">
+          <Link to="/sobre" className="absolute right-3 bottom-3 flex size-12.5 items-center justify-center rounded-full bg-white text-brand no-underline transition hover:scale-108" aria-label="Ir para a página Sobre">
             <svg className="size-5.5 fill-none stroke-current stroke-[3.5] [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24">
               <line x1="7" y1="17" x2="17" y2="7"></line>
               <polyline points="10 7 17 7 17 14"></polyline>
             </svg>
-          </a>
+          </Link>
         </div>
 
         <section className="mx-auto flex w-full max-w-288 flex-col items-center gap-10 px-6 pt-20 pb-16 text-center md:flex-row-reverse md:justify-between md:px-12 md:py-24 md:text-left">
